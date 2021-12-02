@@ -51,9 +51,12 @@
   text-transform: uppercase;
   color: #8d8e8e;
   cursor: pointer;
-  transition: color 250ms linear;
+  transition: all 250ms linear;
   &.avatar {
     padding: 15px;
+  }
+  &:hover {
+    background: #0a84ff;
   }
   &:hover .head-button-download-text {
     color: #ffffff;
@@ -68,7 +71,7 @@
     fill: #ffffff;
   }
   &:hover .head-icon-trash {
-    fill: #ff0000;
+    fill: #ffffff;
   }
 }
 .head-button-download-text {
@@ -313,6 +316,7 @@
 .iframe-go-icon {
   width: 22px;
   height: 22px;
+  fill: #ffffff;
 }
 .iframe-time {
   font-family: RF Dewi Extended;
@@ -378,6 +382,12 @@
   color: #ffffff;
   margin-left: 15px;
   width: 143px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 250ms linear;
+  &:hover {
+    color: #f4b400;
+  }
 }
 .footer-ln-lic {
   font-family: RF Dewi Extended;
