@@ -30,7 +30,7 @@ button {
 }
 
 body {
-  background-image: url("../../images/photos/footbal.png");
+  background-image: url("./../images/photos/footbal.png");
   background-position: center;
 }
 
