@@ -1,9 +1,12 @@
 .cont {
-  max-width: 1110px;
+  width: 1110px;
   margin: 0 auto;
   background: #272727;
   border-radius: 24px;
   padding: 28px 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .head {
   position: relative;

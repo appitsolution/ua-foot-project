@@ -31,13 +31,20 @@ button {
 
 body {
   background-image: url("./../images/photos/footbal.png");
-  background-position: center;
+  display: flex;
+  height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .container {
-  max-width: 1110px;
+  width: 1110px;
   margin: 0 auto;
   padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .header {
@@ -148,6 +155,23 @@ body {
 
 .lang-select-button:hover {
   color: #f4b400;
+}
+
+.lang-select-button:hover .lang-select-button-text {
+  color: #f4b400;
+}
+
+.lang-select-button-text {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .lang-icon {
@@ -578,11 +602,14 @@ body {
 }
 
 .cont {
-  max-width: 1110px;
+  width: 1110px;
   margin: 0 auto;
   background: #272727;
   border-radius: 24px;
   padding: 28px 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .head {
@@ -1056,6 +1083,7 @@ body {
 
 .section-info {
   display: flex;
+  width: 100%;
 }
 
 .content-video {
@@ -1066,18 +1094,20 @@ body {
 
 .window-video {
   width: 100%;
-  height: 563px;
+  height: 100%;
 }
 
 .window-video-iframe {
   width: 100%;
-  height: 563px;
+  height: 100%;
 }
 
 .switching-video {
   display: flex;
   padding: 24px;
+  justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .switching-video-list {
