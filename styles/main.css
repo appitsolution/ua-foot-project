@@ -846,8 +846,9 @@ body {
 }
 
 .header-lang.slack {
-  position: static;
-  margin-left: auto;
+  z-index: 10;
+  background: #272727;
+  border: 1px solid #6fb2f4;
 }
 
 .block-video {
@@ -1408,14 +1409,18 @@ body {
 }
 
 .tools-line {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  pointer-events: none;
+  transition: all 250ms linear;
 }
 
 .tools-line-list {
@@ -1470,14 +1475,27 @@ body {
   transition: color 250ms linear;
 }
 
-.tools-line-exit {
+.tools-line-exit,
+.tools-forms-button-close,
+.tools-text-button-close,
+.tools-graph-button-close {
   appearance: none;
   border: none;
   background: none;
   cursor: pointer;
 }
 
-.tools-line-exit:hover .tools-line-exit-icon {
+.tools-line-exit:hover .tools-line-exit-icon,
+.tools-forms-button-close:hover .tools-line-exit-icon,
+.tools-text-button-close:hover .tools-line-exit-icon,
+.tools-graph-button-close:hover .tools-line-exit-icon {
+  fill: #0a84ff;
+}
+
+.tools-line-exit:hover .tools-forms-button-close-icon,
+.tools-forms-button-close:hover .tools-forms-button-close-icon,
+.tools-text-button-close:hover .tools-forms-button-close-icon,
+.tools-graph-button-close:hover .tools-forms-button-close-icon {
   fill: #0a84ff;
 }
 
@@ -1723,14 +1741,18 @@ body {
 }
 
 .tools-forms {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 
 .tools-forms-list {
@@ -2135,25 +2157,33 @@ body {
 }
 
 .tools-texts {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 
 .tools-graph {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 
 .tools-graph-list {

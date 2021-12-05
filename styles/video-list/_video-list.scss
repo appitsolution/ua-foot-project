@@ -211,8 +211,9 @@
   transition: fill 200ms linear;
 }
 .header-lang.slack {
-  position: static;
-  margin-left: auto;
+  z-index: 10;
+  background: #272727;
+  border: 1px solid #6fb2f4;
 }
 .block-video {
   padding-top: 28px;
