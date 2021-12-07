@@ -1,0 +1,46 @@
+.download {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download-title {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 351px;
+  padding: 0 94px;
+  color: #ffffff;
+}
+.download-text {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 82px;
+}
+.download-toomb {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-top: 32px;
+  overflow: hidden;
+  margin-bottom: 54px;
+}
+.download-strip {
+  background: #0a84ff;
+  width: 75%;
+  height: 10px;
+}

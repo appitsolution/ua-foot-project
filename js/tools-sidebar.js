@@ -101,3 +101,14 @@ closeText.addEventListener("click", textClose);
 
 buttonGraph.addEventListener("click", graphOpen);
 closeGraph.addEventListener("click", graphClose);
+
+const playButton = document.querySelector("#play-video");
+
+const playVideo = () => {
+  if (playButton.children[0].textContent.includes("PLAY VIDEO")) {
+    playButton.children[0].textContent = "STOP VIDEO"
+    return
+  }
+  playButton.children[0].textContent = "PLAY VIDEO";
+}
+playButton.addEventListener("click", playVideo);
